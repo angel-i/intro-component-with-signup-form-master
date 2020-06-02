@@ -1,41 +1,89 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-body{
-    background: url(images/bg-intro-desktop.png);
-    background-color:  hsl(0, 100%, 74%) ;
-    font-family: 'Poppins', sans-serif;
+body {
+  background: url(images/bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%);
+  font-family: "Poppins", sans-serif;
 }
-.container{
-    width: 1000px;
-    /* margin: 50px auto; */
-    display: flex;
-    align-items: center; 
-    height: 100vh;
-    justify-content: center;
-    
+.container {
+  max-width: 1440px;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: space-between;
 }
-.header{
-    color:white ;
-    font-size: 1.8rem;
-    flex: 1;
- 
+.header {
+  color: white;
+  font-size: 1.8rem;
+
+  /* margin-right: 100px; */
+
+  width: 45%;
 }
-.header p{
-    font-size: 1rem;
+.header p {
+  font-size: 1rem;
+  margin-top: 40px;
 }
-.payment{
-    background-color: hsl(248, 32%, 49%) ;
-    padding: 20px;
-    text-align: center;
-    
-    color: white;
-    width: 100%;
-    flex: 2;
-    
+.column2 {
+  width: 45%;
 }
-#resaltado{
-    font-weight:700;
+.payment {
+  background-color: hsl(248, 32%, 49%);
+  padding: 20px;
+  text-align: center;
+
+  color: white;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#resaltado {
+  font-weight: 700;
+}
+.form-wrap {
+  background-color: white;
+  padding: 40px;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+.form-wrap .form-group input {
+  padding: 20px 20px 20px 50px;
+  width: 100%;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: hsl(246, 25%, 77%);
+  font-size: 18px;
+  border-radius: 10px;
+  border: 2px solid hsl(246, 25%, 77%);
+  font-family: "Poppins", sans-serif;
+}
+.form-wrap button {
+  width: 100%;
+  padding: 20px;
+  color: white;
+  background-color: hsl(154, 59%, 51%);
+  margin-bottom: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: none;
+}
+.form-wrap button:hover {
+  background-color: hsl(248, 32%, 49%);
+}
+.bottom-text {
+  text-align: center;
+  color: hsl(246, 25%, 77%);
+  font-size: 12px;
+}
+.bottom-text a {
+  color: red;
+  text-decoration: none;
+  font-weight: 700;
 }
